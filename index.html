@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="donate.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+<body>
+  <nav>
+    <div class="toggle">
+      <div class="menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </div>
+    <ul>
+      <li><a href="#"><strong>Donate Now</strong></a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.menu').click(function(){
+        $('ul').toggleClass('active');
+      })
+    })
+  </script>
+  <div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">Donate For A Change</h1>
+    <h3>This is a responsive website</h3>
+    <!-- <button type="button" class="btn btn-primary btn-lg"><a href="form.html">Donate Now</a></button> -->
+    <input style="background-color: #330080;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;" type="button" onclick="location.href='form.html';" value="Donate now" />
+  </div>
+</div>
+  
+</body>
+</html>

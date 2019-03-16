@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <title>Donate</title>
+    
+</head>
+<body>
+ 
+        <div style="width: 400px;">
+</div>
+<div style="padding-bottom: 18px;font-size : 24px;">Donation For A Cause</div>
+<div style="display: flex; padding-bottom: 18px;width : 550px;">
+<div style=" margin-left : 0; margin-right : 1%; width : 49%;">First name<br/>
+<input type="text" id="data_2" name="data_2" style="width: 100%;" class="form-control"/>
+</div>
+<div style=" margin-left : 1%; margin-right : 0; width : 49%;">Last name<br/>
+<input type="text" id="data_3" name="data_3" style="width: 100%;" class="form-control"/>
+</div>
+</div>
+<div style="padding-bottom: 18px;">Donation Amount<span style="color: red;"> *</span><br/></div>
+
+      <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
+        <input type="hidden" name="cmd" value="_cart">
+        <input type="hidden" name="upload" value="1">
+        <input type="hidden" name="business" value="accountone1@gmail.com">
+        
+        <input type="hidden" name="item_name_1" value="abc">
+        <input type="hidden" name="amount_1" value="0">
+        <input type="hidden" name="quantity_1" value="1">
+        
+        <input type="hidden" name="item_name_2" value="xyz">
+        <input type="text" name="amount_2" value="0">
+        <input type="hidden" name="quantity_2" value="1">
+        <input type="submit" style="background-color: #330080;border: none;color: white;padding: 8px 20px;text-align: center;text-decoration: none;display: inline-block;font-size: 14px;" value="Pay with PayPal">
+        </form>
+  
+</body>
+</html>
